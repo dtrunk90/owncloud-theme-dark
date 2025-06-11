@@ -38,6 +38,12 @@ body,
 	background-color: var(--dark-theme-color-bg) !important;
 }
 
+@media only screen and (max-width: 768px) {
+	#app-content {
+		background-color: var(--dark-theme-color-bg);
+	}
+}
+
 button:focus,
 button:hover,
 input[type="button"]:focus,
