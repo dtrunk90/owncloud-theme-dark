@@ -170,6 +170,7 @@ textarea:hover,
 	color: inherit;
 }
 
+.filesize,
 .modified {
 	color: inherit !important;
 }
