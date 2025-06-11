@@ -1,0 +1,175 @@
+/**
+ * @author Danny Trunk <dtrunk90@gmail.com>
+ * @copyright Copyright (c) 2025, Danny Trunk
+ * @license AGPL-3.0
+ *
+ * This code is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License, version 3,
+ * as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
+
+#body-login {
+	height: 100%;
+}
+
+.ui-state-focus,
+.ui-state-hover,
+.ui-widget-content,
+.ui-widget-content .ui-state-focus,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-focus,
+.ui-widget-header .ui-state-hover,
+#body-login {
+	background-image: none;
+}
+
+
+.ui-widget-content .ui-state-focus,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-focus,
+.ui-widget-header .ui-state-hover {
+	border-width: 0;
+}
+
+.ui-menu .ui-menu-item a.ui-state-active,
+.ui-menu .ui-menu-item a.ui-state-focus{
+	margin: 0;
+}
+
+table thead th,
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+table.multiselect thead th,
+textarea,
+.nav-trashbin,
+.oc-dialog,
+.oc-dialog-buttonrow,
+.oc-dialog-content,
+.oc-dialog-title,
+.searchbox input[type="search"]:active,
+.searchbox input[type="search"]:focus,
+.searchbox input[type="search"]:valid,
+.settings-button,
+.settings-button:hover,
+.settings-button:focus,
+.select2-container-multi .select2-choices,
+.select2-drop,
+.select2-results .select2-ajax-error,
+.select2-results .select2-no-results,
+.select2-results .select2-searching,
+.select2-results .select2-selection-limit,
+.shareTabView .icon-loading-small,
+.systemtags-select2-container .select2-choices,
+.ui-widget-content,
+.uk-modal-header,
+.uk-modal-footer,
+#app-content-systemtagsfilter .select2-choices,
+#app-navigation,
+#app-settings-content,
+#body-login .v-align,
+#container,
+#expanddiv a:hover,
+#filestable tbody tr,
+#new-app-login-name,
+#new-app-password {
+	background-color: inherit;
+}
+
+.select2-container-multi .select2-choices .select2-search-field input.select2-active,
+#searchresults {
+	background-color: inherit !important;
+}
+
+.select2-container-multi .select2-choices {
+	background-image: none;
+}
+
+a,
+button,
+button:hover,
+button:focus,
+div.crumb a, div.crumb span,
+input[type="button"],
+input[type="button"]:focus,
+input[type="button"]:hover,
+input[type="email"],
+input[type="email"]:focus,
+input[type="email"]:hover,
+input[type="number"],
+input[type="number"]:focus,
+input[type="number"]:hover,
+input[type="password"],
+input[type="password"]:focus,
+input[type="password"]:hover,
+input[type="search"],
+input[type="search"]:focus,
+input[type="search"]:hover,
+input[type="submit"],
+input[type="submit"]:focus,
+input[type="submit"]:hover,
+input[type="tel"],
+input[type="tel"]:focus,
+input[type="tel"]:hover,
+input[type="text"],
+input[type="text"]:focus,
+input[type="text"]:hover,
+input[type="time"],
+input[type="time"]:focus,
+input[type="time"]:hover,
+input[type="url"],
+input[type="url"]:focus,
+input[type="url"]:hover,
+select,
+select:hover,
+select:focus,
+select:active,
+table th,
+table th a,
+table.multiselect thead th,
+table.multiselect th a,
+tbody a,
+textarea,
+textarea:focus,
+textarea:hover,
+.bubble,
+.button,
+.button:focus,
+.button:hover,
+.button a:focus,
+.oc-dialog,
+.pager li a,
+.popovermenu .menuitem,
+.section,
+.select2-container-multi .select2-choices .select2-search-field input,
+.select2-drop,
+.select2-results .select2-highlighted,
+.tabHeader:hover,
+.tabHeader.selected,
+.uk-button-default,
+.uk-text-meta,
+#app-content-systemtagsfilter .select2-choices,
+#app-navigation .app-navigation-entry-menu,
+#app-navigation li.divider,
+#app-navigation li > a,
+#quota,
+#userlist th.name {
+	color: inherit;
+}
+
+.modified {
+	color: inherit !important;
+}

@@ -1,6 +1,6 @@
 /**
- * @author Jan-Christoph Borchardt, http://jancborchardt.net
- * @copyright Copyright (c) 2018, ownCloud GmbH
+ * @author Danny Trunk <dtrunk90@gmail.com>
+ * @copyright Copyright (c) 2025, Danny Trunk
  * @license AGPL-3.0
  *
  * This code is free software: you can redistribute it and/or modify
@@ -16,127 +16,273 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
 
+@import url("vars.css");
+@import url("reset.css");
+@import url("img.css");
 
-/* header color */
-/* this is the main brand color */
-#body-user #header,
+/**
+ * Background
+ */
+
+body,
+#app-settings,
+#app-sidebar,
+#body-public #header,
 #body-settings #header,
-#body-public #header {
-	background-color: #745bca;
+#body-user #header,
+#content-wrapper {
+	background-color: var(--dark-theme-color-bg);
 }
 
-/* log in screen background color and image */
-/* gradient of the header color and a brighter shade */
-/* can also be a flat color or an image */
-#body-login {
-	/* Login background image */
-	background-image: url("../img/background.jpg") !important;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	/* End of using background image */
-	background: #745bca; /* Old browsers */
-	background: -moz-linear-gradient(top, #947bea 0%, #745bca 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#947bea), color-stop(100%,#745bca)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #947bea 0%,#745bca 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #947bea 0%,#745bca 100%); /* Opera11.10+ */
-	background: -ms-linear-gradient(top, #947bea 0%,#745bca 100%); /* IE10+ */
-	background: linear-gradient(top, #947bea 0%,#745bca 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#947bea', endColorstr='#745bca',GradientType=0 ); /* IE6-9 */
+.uk-modal-dialog {
+	background-color: var(--dark-theme-color-bg) !important;
 }
 
-/* >= ownCloud 10.8 - login button */
-/* styling of the login button which was introduced with ownCloud 10.8 */
-#alternative-logins li a.button, html #body-login input[type="submit"], html #body-login button[type="submit"] {
-  background-color: #745bca;
-  color: #fff; /* color of the text */
-  border: 1px solid #fff;
-}
-/* style for the hovered state of the button */
-#alternative-logins li a.button:hover, html #body-login input[type="submit"]:hover, html #body-login button[type="submit"]:hover {
-	background-color: #947bea;
-	color: #fff; /* color of the text */
-  border: 1px solid #fff;
-}
-
-/* style legal and copyright text */
-/* styling of the info text of the login page on the button. */
-/* the color of the p.info part is also the color of the text above the credential fields (used by ownCloud >= 10.8) */
-/* also the color of error messages will be changed to the provided value */
-#body-login p.info, #body-login .warning, #body-login .update, #body-login .error, #body-login #showAdvanced {
-  color: #fff;
-}
-/* legal and copyright text (Link) */
-#body-login p.info a, #body-login .update a, #body-login form fieldset legend, #body-login #datadirContent label {
-  color: #fff;
-}
-
-/* primary action button, use sparingly */
-/* header color as border, brighter shade again, here as background */
-.primary,
-input[type="submit"].primary,
-input[type="button"].primary,
-button.primary,
-.button.primary,
-.primary:active,
-input[type="submit"].primary:active,
-input[type="button"].primary:active,
-button.primary:active,
-.button.primary:active {
-	border-color: #745bca;
-	background-color: #947bea;
-}
-.primary:hover,
-input[type="submit"].primary:hover,
-input[type="button"].primary:hover,
-button.primary:hover,
-.button.primary:hover,
-.primary:focus,
-input[type="submit"].primary:focus,
-input[type="button"].primary:focus,
-button.primary:focus,
-.button.primary:focus {
-	background-color: #8b75e4;
-}
-.primary:active, input[type="submit"].primary:active, input[type="button"].primary:active, button.primary:active, .button.primary:active,
-.primary:disabled, input[type="submit"].primary:disabled, input[type="button"].primary:disabled, button.primary:disabled, .button.primary:disabled,
-.primary:disabled:hover, input[type="submit"].primary:disabled:hover, input[type="button"].primary:disabled:hover, button.primary:disabled:hover, .button.primary:disabled:hover,
-.primary:disabled:focus, input[type="submit"].primary:disabled:focus, input[type="button"].primary:disabled:focus, button.primary:disabled:focus, .button.primary:disabled:focus {
-	background-color: #745bca;
+button:focus,
+button:hover,
+input[type="button"]:focus,
+input[type="button"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover,
+select:active,
+select:focus,
+select:hover,
+table tr.mouseOver td,
+tbody tr:active,
+tbody tr:focus,
+tbody tr:hover,
+.button:focus,
+.button:hover,
+.button a:focus,
+.mask,
+.select2-results .select2-highlighted,
+.systemtags-select2-dropdown .select2-highlighted,
+.systemtags-select2-dropdown .select2-selected.select2-highlighted,
+.usercount.tag,
+#filestable tbody tr:active,
+#filestable tbody tr:focus,
+#filestable tbody tr:hover,
+#filestable tbody tr.highlighted,
+#filestable tbody tr.highlighted .name:focus,
+#filestable tbody tr.searchresult,
+#filestable tbody tr.selected,
+#quota div {
+	background-color: var(--dark-theme-color-bg-lightened);
 }
 
-/* use logos from theme */
-#header .logo {
-	background-image: url('../img/logo.svg');
-	width: 250px;
-	height: 121px;
-}
-#header .logo-icon {
-	background-image: url('../img/logo-icon.svg');
-	height: 34px;
-	line-height: initial;
-}
-#owncloud {
-	padding: 3px;
+.uk-card-default {
+	background-color: var(--dark-theme-color-bg-lightened) !important;
 }
 
-/* show Claim */
-#body-user #logo-claim  {
-	display: initial !important;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	padding-top: 17px;
-	padding-left: 170px;
-	height: 45px;
+button,
+div.multiselect.active,
+input[type="button"],
+input[type="submit"],
+select,
+ul.multiselectoptions,
+.bubble,
+.button,
+.pager li a,
+.subTabHeaders > .subTabHeader,
+.ui-widget-content .ui-state-focus,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-focus,
+.ui-widget-header .ui-state-hover,
+#app-navigation .active,
+#app-navigation .app-navigation-entry-menu,
+#controls,
+#expanddiv,
+#quota {
+	background-color: var(--dark-theme-color-bg-darkened);
 }
-#body-user #logo-claim a {
-	color: #fff;
+
+#body-settings .warning,
+#body-user .warning {
+	background-color: var(--dark-theme-color-warning-bg);
 }
-/* hide on small screens */
-@media only screen and (max-width: 767px) {
-	#body-user #logo-claim  {
-		display: none !important;
-	}
+
+/**
+ * Border
+ */
+
+#body-login input[type="text"],
+#body-login input[type="password"],
+#body-login input[type="email"] {
+	border: 1px solid var(--dark-theme-color-bg-lightened);
+}
+
+.searchbox input[type="search"] {
+	border: 1px solid transparent;
+}
+
+button,
+ul.multiselectoptions,
+input[type="button"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="submit"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+select,
+table td,
+table th,
+table.grid td,
+table.grid th,
+textarea,
+.button,
+.nav-trashbin,
+.pager li a,
+.searchbox input[type="search"]:active,
+.searchbox input[type="search"]:focus,
+.searchbox input[type="search"]:valid,
+.select2-container-multi.select2-container-active .select2-choices,
+.select2-container-multi .select2-choices,
+.select2-drop-active,
+.subTabHeaders > .subTabHeader.selected,
+.systemtags-select2-container .select2-choices,
+.ui-state-focus,
+.ui-state-hover,
+.ui-widget-content,
+#app-content-systemtagsfilter .select2-choices,
+#app-navigation li.divider,
+#app-settings-content,
+#app-settings-header,
+#app-sidebar,
+#app-navigation,
+#apppasswords .token-list td,
+#quota,
+#sessions .token-list td {
+	border-color: var(--dark-theme-color-bg-lightened);
+}
+
+button:focus,
+button:hover,
+input[type="button"]:focus,
+input[type="button"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover,
+select:active,
+select:focus,
+select:hover,
+.button:focus,
+.button:hover,
+.button a:focus {
+	border-color: var(--dark-theme-color-text-darkened);
+}
+
+.tabHeader.selected {
+	border-color: var(--dark-theme-color-text);
+}
+
+/**
+ * Typography
+ */
+
+body,
+.subTabHeaders > .subTabHeader.selected,
+#fileList .popovermenu .action {
+	color: var(--dark-theme-color-text);
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.star.-off,
+.uk-card-default,
+.uk-close,
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4,
+.uk-h5,
+.uk-h6,
+.uk-heading-large,
+.uk-heading-medium,
+.uk-heading-small,
+.uk-heading-xlarge,
+.uk-heading-2xlarge,
+.uk-heading-3xlarge,
+.uk-link,
+.uk-nav-default .uk-nav-header,
+.uk-table th {
+	color: var(--dark-theme-color-text) !important;
+}
+
+/**
+ * Misc
+ */
+
+.settings-button {
+	opacity: .57;
+}
+
+.settings-button:hover,
+.settings-button:focus {
+	opacity: 1;
+}
+
+.bubble,
+#app-navigation .app-navigation-entry-menu {
+	filter: none;
+}
+
+ul.multiselectoptions.down,
+.bubble,
+.oc-dialog,
+#app-navigation .app-navigation-entry-menu,
+#expanddiv {
+	box-shadow: 0 1px 10px var(--dark-theme-color-bg-darkened);
+}
+
+.bubble::after,
+#app-navigation .app-navigation-entry-menu::after {
+	border-bottom-color: var(--dark-theme-color-bg-darkened);
+}
+
+.star.-on {
+	color: #fc0 !important;
+}
+
+.star.-off {
+	opacity: .5 !important;
+}
+
+.bubble,
+#expanddiv {
+	border-radius: 3px;
+}
+
+.icon-loading::after,
+.icon-loading-dark::after,
+.icon-loading-small::after,
+.icon-loading-small-dark::after,
+.loading::after,
+.loading-small::after {
+	border-color: var(--dark-theme-color-bg-lightened);
+	border-top-color: var(--dark-theme-color-text);
+}
+
+td.displayName > img,
+td.password > img,
+td.quota > img,
+td.remove > a,
+.action.resendInvitationEmail img,
+.ui-icon,
+.ui-widget-content .ui-icon {
+	filter: invert(100%);
+}
+
+.select2-container-multi .select2-choices .select2-search-choice {
+	background-color: var(--dark-theme-color-accent-bg);
+	color: var(--dark-theme-color-accent-text);
+	border-width: 0;
 }

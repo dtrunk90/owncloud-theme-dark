@@ -1,0 +1,31 @@
+/**
+ * @author Danny Trunk <dtrunk90@gmail.com>
+ * @copyright Copyright (c) 2025, Danny Trunk
+ * @license AGPL-3.0
+ *
+ * This code is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License, version 3,
+ * as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
+
+:root {
+	--dark-theme-color-accent-bg: #041e42;
+	--dark-theme-color-accent-text: #fff;
+
+	--dark-theme-color-bg: #121212;
+	--dark-theme-color-bg-darkened: hsl(from var(--dark-theme-color-bg) h s calc(l - 5));
+	--dark-theme-color-bg-lightened: hsl(from var(--dark-theme-color-bg) h s calc(l + 5));
+
+	--dark-theme-color-text: #fff;
+	--dark-theme-color-text-darkened: hsl(from var(--dark-theme-color-text) h s calc(l - 75));
+
+	--dark-theme-color-warning-bg: #e65100;
+}

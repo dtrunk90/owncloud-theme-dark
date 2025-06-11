@@ -1,0 +1,174 @@
+/**
+ * @author Danny Trunk <dtrunk90@gmail.com>
+ * @copyright Copyright (c) 2025, Danny Trunk
+ * @license AGPL-3.0
+ *
+ * This code is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License, version 3,
+ * as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
+
+input[type="checkbox"].checkbox + label::before {
+	background-image: url("../img/actions/checkbox.svg");
+}
+
+input[type="radio"].radio + label::before {
+	background-image: url("../img/actions/radio.svg");
+}
+
+input[type="radio"].radio:checked + label::before {
+	background-image: url("../img/actions/radio-checked.svg");
+}
+
+.icon-add {
+	background-image: url("../img/actions/add.svg");
+}
+
+.icon-checkmark {
+	background-image: url("../img/actions/checkmark.svg");
+}
+
+.icon-close,
+.oc-dialog-close {
+	background-image: url("../img/actions/close.svg");
+}
+
+.icon-delete,
+.icon-delete.no-permission:hover,
+.icon-delete.no-permission:focus {
+	background-image: url("../img/actions/delete.svg");
+}
+
+.icon-details {
+	background-image: url("../img/actions/details.svg");
+}
+
+a.icon-diagnostics {
+	background-image: url("../img/apps/diagnostics.svg");
+}
+
+.icon-download {
+	background-image: url("../img/actions/download.svg");
+}
+
+.icon-info {
+	background-image: url("../img/actions/info.svg");
+}
+
+li > a.icon-list {
+	background-image: url("../img/actions/menu.svg");
+}
+
+li > a.icon-more,
+.icon-more {
+	background-image: url("../img/actions/more.svg");
+}
+
+li > a.icon-password,
+.icon-password {
+	background-image: url("../img/actions/password.svg");
+}
+
+.icon-public {
+	background-image: url("../img/actions/public.svg");
+}
+
+.icon-rename {
+	background-image: url("../img/rename.svg");
+}
+
+.icon-search {
+	background-image: url("../img/actions/search.svg");
+}
+
+li > a.icon-settings,
+.icon-settings,
+.settings-button {
+	background-image: url("../img/actions/settings.svg");
+}
+
+li > a.icon-shared,
+.icon-shared {
+	background-image: url("../img/actions/shared.svg");
+}
+
+.icon-shield {
+	background-image: url("../img/apps/shield.svg");
+}
+
+.icon-star,
+.icon-starred:hover,
+.icon-starred:focus {
+	background-image: url("../img/actions/star.svg");
+}
+
+.icon-triangle-n {
+	background-image: url('../img/actions/triangle-n.svg');
+}
+
+select,
+.icon-triangle-s {
+	background-image: url('../img/actions/triangle-s.svg');
+}
+
+.icon-upload {
+	background-image: url("../img/actions/upload.svg");
+}
+
+li > a.icon-user,
+.icon-user {
+	background-image: url("../img/actions/user.svg");
+}
+
+.nav-icon-favorites {
+	background-image: url("../img/star.svg");
+}
+
+.nav-icon-files {
+	background-image: url("../img/folder.svg");
+}
+
+.nav-icon-sharingin,
+.nav-icon-sharingout {
+	background-image: url("../img/share.svg");
+}
+
+.nav-icon-sharinglinks {
+	background-image: url("../img/public.svg");
+}
+
+.nav-icon-systemtagsfilter {
+	background-image: url("../img/tag.svg");
+}
+
+.nav-icon-trashbin {
+	background-image: url("../img/delete.svg");
+}
+
+.select2-container-multi .select2-choices .select2-search-field input.select2-active {
+	background-image: url("../img/actions/select2-spinner.gif") !important;
+}
+
+.social-diaspora {
+	background-image: url("../img/social-diaspora.svg");
+}
+
+.social-facebook {
+	background-image: url("../img/social-facebook.svg");
+}
+
+.social-gnu {
+	background-image: url("../img/social-gnu.svg");
+}
+
+.social-twitter {
+	background-image: url("../img/social-twitter.svg");
+}
