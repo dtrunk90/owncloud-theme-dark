@@ -4,7 +4,7 @@
 
 To use the `theme-dark` app, clone or [download](https://github.com/dtrunk90/theme-dark/archive/refs/heads/master.zip) this repository to the `owncloud/apps` folder on your server. Please note that the Apache user needs access rights to the folder and its content. As an example, use the following command to adjust the permissions: `chown -R www-data:www-data theme-example`.
 
-When you _download_ this repository the extracted folder name will be `theme-dark-master`. You must change the folder name to `theme-dark` to get the theme working out of the box.
+When you _download_ this repository the extracted folder name will be `owncloud-theme-dark-master`. You must change the folder name to `theme-dark` to get the theme working out of the box.
 
 If you change the name of the app (the folder name) from `theme-dark` to another name, be sure to change the `<id>` in the file `appinfo/info.xml` as well. The folder name and the `<id>` must be identical.
 
