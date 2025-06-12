@@ -176,3 +176,7 @@ li > a.icon-user,
 .social-twitter {
 	background-image: url("../img/social-twitter.svg");
 }
+
+#oc-dialog-filepicker-content .dirtree .home {
+	background-image: url("../img/places/home.svg");
+}

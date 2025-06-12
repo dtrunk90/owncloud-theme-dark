@@ -87,7 +87,8 @@ textarea,
 #filestable tbody tr,
 #filestable tbody tr.externalDisabledRow,
 #new-app-login-name,
-#new-app-password {
+#new-app-password,
+#oc-dialog-filepicker-content .filelist {
 	background-color: inherit;
 }
 
