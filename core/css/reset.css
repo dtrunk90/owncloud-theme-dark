@@ -85,6 +85,7 @@ textarea,
 #container,
 #expanddiv a:hover,
 #filestable tbody tr,
+#filestable tbody tr.externalDisabledRow,
 #new-app-login-name,
 #new-app-password {
 	background-color: inherit;
