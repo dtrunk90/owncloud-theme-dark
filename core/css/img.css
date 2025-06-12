@@ -128,6 +128,10 @@ li > a.icon-user,
 	background-image: url("../img/actions/user.svg");
 }
 
+.nav-icon-extstoragemounts {
+	background-image: url("../img/external.svg");
+}
+
 .nav-icon-favorites {
 	background-image: url("../img/star.svg");
 }
