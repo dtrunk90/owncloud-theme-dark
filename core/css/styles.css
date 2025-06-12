@@ -288,6 +288,10 @@ td.remove > a,
 	filter: invert(100%);
 }
 
+img[src="/core/img/actions/logout.svg"] {
+	filter: none;
+}
+
 .select2-container-multi .select2-choices .select2-search-choice {
 	background-color: var(--dark-theme-color-accent-bg);
 	color: var(--dark-theme-color-accent-text);
