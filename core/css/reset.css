@@ -72,6 +72,7 @@ textarea,
 .select2-results .select2-no-results,
 .select2-results .select2-searching,
 .select2-results .select2-selection-limit,
+.selectAllApplicableUsers,
 .shareTabView .icon-loading-small,
 .systemtags-select2-container .select2-choices,
 .ui-widget-content,
@@ -94,7 +95,8 @@ textarea,
 	background-color: inherit !important;
 }
 
-.select2-container-multi .select2-choices {
+.select2-container-multi .select2-choices,
+.select2-container-multi .select2-choices .select2-search-choice {
 	background-image: none;
 }
 

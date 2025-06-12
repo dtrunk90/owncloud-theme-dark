@@ -277,6 +277,7 @@ ul.multiselectoptions.down,
 	border-top-color: var(--dark-theme-color-text);
 }
 
+img[src^="/core/img/"],
 td.displayName > img,
 td.password > img,
 td.quota > img,
